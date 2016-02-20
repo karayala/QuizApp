@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[Question Text]"
+            android:id="@+id/textFrag_text"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_vertical|center_horizontal" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:id="@+id/textfrag_o1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:id="@+id/textfrag_o2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option 3"
+            android:id="@+id/textfrag_o3"
+            android:checked="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/textfrag_submit"
+            android:onClick="submitAnswer"
+            android:gravity="center|center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="startOver"
+            android:layout_height="wrap_content"
+            android:text="Start Over"
+            android:id="@+id/textfrag_startover"
+            android:typeface="normal"
+            android:visibility="visible"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_x="0dp"
+            android:layout_y="426dp" />
+    </LinearLayout>
+
+</RelativeLayout>
